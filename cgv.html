@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <title>Sylhet Naan Kebab - Saveurs Indiennes et Kebabs Authentiques à Rodez</title>
+
+  <meta name="description" content="Dégustez les saveurs exquises de la cuisine indienne et des kebabs authentiques chez Sylhet Naan Kebab à Rodez." />
+  <meta name="keywords" content="restaurant, cuisine indienne, kebab, Rodez, saveurs exotiques" />
+
+
+    <!-- Favicon -->
+    <!-- <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon"> -->
+    <link rel="shortcut icon" href="favicon-16x16.png">
+
+
+    <!-- Font awesome -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">   
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slick.css">    
+    <!-- Date Picker -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">    
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Theme color -->
+    <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">     
+
+    <!-- Main style sheet -->
+    <link href="style.css" rel="stylesheet">    
+
+   
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Tangerine' rel='stylesheet' type='text/css'>        
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Prata' rel='stylesheet' type='text/css'>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+  (function() {
+    var host = window.location.hostname;
+    var element = document.createElement('script');
+    var firstScript = document.getElementsByTagName('script')[0];
+    var url = 'https://cmp.quantcast.com'
+      .concat('/choice/', 'HJwjqPMSMGCJJ', '/', host, '/choice.js?tag_version=V2');
+    var uspTries = 0;
+    var uspTriesLimit = 3;
+    element.async = true;
+    element.type = 'text/javascript';
+    element.src = url;
+  
+    firstScript.parentNode.insertBefore(element, firstScript);
+  
+    function makeStub() {
+      var TCF_LOCATOR_NAME = '__tcfapiLocator';
+      var queue = [];
+      var win = window;
+      var cmpFrame;
+  
+      function addFrame() {
+        var doc = win.document;
+        var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+  
+        if (!otherCMP) {
+          if (doc.body) {
+            var iframe = doc.createElement('iframe');
+  
+            iframe.style.cssText = 'display:none';
+            iframe.name = TCF_LOCATOR_NAME;
+            doc.body.appendChild(iframe);
+          } else {
+            setTimeout(addFrame, 5);
+          }
+        }
+        return !otherCMP;
+      }
+  
+      function tcfAPIHandler() {
+        var gdprApplies;
+        var args = arguments;
+  
+        if (!args.length) {
+          return queue;
+        } else if (args[0] === 'setGdprApplies') {
+          if (
+            args.length > 3 &&
+            args[2] === 2 &&
+            typeof args[3] === 'boolean'
+          ) {
+            gdprApplies = args[3];
+            if (typeof args[2] === 'function') {
+              args[2]('set', true);
+            }
+          }
+        } else if (args[0] === 'ping') {
+          var retr = {
+            gdprApplies: gdprApplies,
+            cmpLoaded: false,
+            cmpStatus: 'stub'
+          };
+  
+          if (typeof args[2] === 'function') {
+            args[2](retr);
+          }
+        } else {
+          if(args[0] === 'init' && typeof args[3] === 'object') {
+            args[3] = Object.assign(args[3], { tag_version: 'V2' });
+          }
+          queue.push(args);
+        }
+      }
+  
+      function postMessageEventHandler(event) {
+        var msgIsString = typeof event.data === 'string';
+        var json = {};
+  
+        try {
+          if (msgIsString) {
+            json = JSON.parse(event.data);
+          } else {
+            json = event.data;
+          }
+        } catch (ignore) {}
+  
+        var payload = json.__tcfapiCall;
+  
+        if (payload) {
+          window.__tcfapi(
+            payload.command,
+            payload.version,
+            function(retValue, success) {
+              var returnMsg = {
+                __tcfapiReturn: {
+                  returnValue: retValue,
+                  success: success,
+                  callId: payload.callId
+                }
+              };
+              if (msgIsString) {
+                returnMsg = JSON.stringify(returnMsg);
+              }
+              if (event && event.source && event.source.postMessage) {
+                event.source.postMessage(returnMsg, '*');
+              }
+            },
+            payload.parameter
+          );
+        }
+      }
+  
+      while (win) {
+        try {
+          if (win.frames[TCF_LOCATOR_NAME]) {
+            cmpFrame = win;
+            break;
+          }
+        } catch (ignore) {}
+  
+        if (win === window.top) {
+          break;
+        }
+        win = win.parent;
+      }
+      if (!cmpFrame) {
+        addFrame();
+        win.__tcfapi = tcfAPIHandler;
+        win.addEventListener('message', postMessageEventHandler, false);
+      }
+    };
+  
+    makeStub();
+  
+    var uspStubFunction = function() {
+      var arg = arguments;
+      if (typeof window.__uspapi !== uspStubFunction) {
+        setTimeout(function() {
+          if (typeof window.__uspapi !== 'undefined') {
+            window.__uspapi.apply(window.__uspapi, arg);
+          }
+        }, 500);
+      }
+    };
+  
+    var checkIfUspIsReady = function() {
+      uspTries++;
+      if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+        console.warn('USP is not accessible');
+      } else {
+        clearInterval(uspInterval);
+      }
+    };
+  
+    if (typeof window.__uspapi === 'undefined') {
+      window.__uspapi = uspStubFunction;
+      var uspInterval = setInterval(checkIfUspIsReady, 6000);
+    }
+  })();
+  </script>
+  <!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+  </head>
+  <body>  
+  <!-- Pre Loader -->
+  <!-- <div id="aa-preloader-area">
+    <div class="mu-preloader">
+      <img src="assets/img/preloader.gif" alt=" loader img">
+    </div>
+  </div> -->
+  <!--START SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#">
+      <i class="fa fa-angle-up"></i>
+      <span>Haut</span>
+    </a>
+  <!-- END SCROLL TOP BUTTON -->
+
+  <!-- Start header section -->
+  <header id="mu-header">  
+    <nav class="navbar navbar-default mu-main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                                        
+          <a class="navbar-brand" href="index.html"><img src="assets/img/log.png" alt="Logo img"></a> 
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav navbar-right mu-main-nav">
+            <li><a href="#mu-slider">ACCUEIL</a></li>
+            <li><a href="#mu-about-us">À PROPOS </a></li>                       
+            <li><a href="#mu-restaurant-menu">MENU</a></li>                       
+            <!-- <li><a href="#mu-reservation">RESERVATION</a></li>                        -->
+            <!-- <li><a href="#mu-gallery">GALLERY</a></li> -->
+            <!-- <li><a href="#mu-chef">OUR TEAM</a></li> -->
+            <!-- <li><a href="#mu-latest-news">BLOG</a></li>  -->
+            <li><a href="#mu-contact">CONTACT</a></li> 
+            <!-- <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="blog-archive.html">PAGE <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">                
+                <li><a href="blog-archive.html">BLOG</a></li>
+                <li><a href="blog-single.html">BLOG DETAILS</a></li>
+                <li><a href="404.html">404 PAGE</a></li>                                            
+              </ul>
+            </li> -->
+          </ul>                            
+        </div><!--/.nav-collapse -->       
+      </div>          
+    </nav> 
+  </header>
+  <!-- End header section -->
+ 
+
+  <!-- Start slider  -->
+  <section id="mu-slider">
+    <div class="mu-slider-area"> 
+      <!-- Top slider -->
+      <div class="mu-top-slider">
+        <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="assets/img/slider/1.webp" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Bienvenue</span>
+            <h2 class="mu-slider-title">Sylheti Naan Kebab</h2>
+            <p>Épices, Kebabs et Magie Indienne, Découvrez l'authenticité des saveurs sylheti sur notre carte</p>           
+            <a href="#" class="mu-readmore-btn" data-glf-cuid="e5824d14-5fff-41d3-8c23-97429a875fe8" data-glf-ruid="ef520273-601a-478b-a914-2b258a765004">COMMANDER MAINTENANT</a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->    
+         <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="assets/img/slider/2.webp" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Une Cuisine à Votre Service</span>
+            <h2 class="mu-slider-title">Notre Passion</h2>
+            <p>Chez Sylheti Naan Kebab, la cuisine est bien plus qu'une simple préparation de repas..</p>
+            <a href="#" class="mu-readmore-btn" data-glf-cuid="e5824d14-5fff-41d3-8c23-97429a875fe8" data-glf-ruid="ef520273-601a-478b-a914-2b258a765004">COMMANDER EN LIGNE</a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide --> 
+         <!-- Top slider single slide -->
+        <div class="mu-top-slider-single">
+          <img src="assets/img/slider/3.webp" alt="img">
+          <!-- Top slider content -->
+          <div class="mu-top-slider-content">
+            <span class="mu-slider-small-title">Explorez notre Menu</span>
+            <h2 class="mu-slider-title">L'Art de la Cuisine Indienne</h2>
+            <P>Notre cuisine fusionne les épices exotiques, les arômes envoûtants et les recettes traditionnelles </P>
+            <a href="#" class="mu-readmore-btn" data-glf-cuid="e5824d14-5fff-41d3-8c23-97429a875fe8" data-glf-ruid="ef520273-601a-478b-a914-2b258a765004">COMMANDER EN LIGNE</a>
+          </div>
+          <!-- / Top slider content -->
+        </div>
+        <!-- / Top slider single slide -->    
+      </div>
+    </div>
+  </section>
+  <!-- End slider  -->
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+          <br>  <br>
+         <h2  style="text-align:center;">Conditions générales de vente pour les commandes en ligne</h2> 
+          <br> <br><br>
+          <p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Ces conditions g&eacute;n&eacute;rales de vente sont applicables lors des commandes en ligne aupr&egrave;s de:</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 34px;">SYLHETI NAAN KEBAB</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;"><br></p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;"><strong>SYLHETI NAAN KEBAB</strong></p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Addresse: 26 Av. du Mar&eacute;chal Joffre, RODEZ 12000, France</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">T&eacute;l&eacute;phone: +33 9 83 97 97 06</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;"><br></p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Devise du menu: EUR</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">(ci-apr&egrave;s d&eacute;nomm&eacute; le &ldquo;Restaurant&rdquo; ou &ldquo;Nous&rdquo;)<br>Ces conditions g&eacute;n&eacute;rales sont applicables &agrave; vous, en tant que client, pour les commandes en ligne (ci-apr&egrave;s d&eacute;nomm&eacute; &ldquo;vous&rdquo; ou &ldquo;l&apos;utilisateur&rdquo; ou le &ldquo;client&rdquo;)</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">VEUILLEZ LIRE ATTENTIVEMENT CES TERMES ET CONDITIONS. SI VOUS NE SOUHAITEZ PAS &Ecirc;TRE OBLIG&Eacute; PAR CES TERMES ET CONDITIONS, VOUS NE DEVEZ PAS ACC&Eacute;DER ET / OU UTILISER LA COMMANDE EN LIGNE (CI-APR&Egrave;S NOMM&Eacute;E &ldquo;DEMANDE DE COMMANDE EN LIGNE&rdquo;). L&apos;ACC&Egrave;S ET/OU L&apos;UTILISATION DE LA COMMANDE EN LIGNE PAR VOUS SERONT CONSID&Eacute;R&Eacute;S COMME VOTRE ACCEPTATION DE CES TERMES ET CONDITIONS.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Sous r&eacute;serve des dispositions l&eacute;gales applicables en vigueur, Nous pouvons, &agrave; notre discr&eacute;tion, amender ou autrement modifier les conditions d&apos;utilisation de temps en temps. Nous vous recommandons de lire attentivement, chaque fois que vous commandez en ligne, les conditions g&eacute;n&eacute;rales car elles peuvent affecter vos droits.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Ces conditions g&eacute;n&eacute;rales d&eacute;crivent les conditions g&eacute;n&eacute;rales de commande en ligne entre Nous et Vous et les diff&eacute;rents droits et obligations des parties.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Dans un souci de clart&eacute;, les pr&eacute;sentes conditions g&eacute;n&eacute;rales s&apos;appliquent (&eacute;galement) en cas de commande en ligne via l&apos;application (ci-apr&egrave;s d&eacute;nomm&eacute;e &laquo;demande de commande en ligne&raquo; ou &laquo;application&raquo;; la demande est l&apos;application de commande en ligne utilis&eacute;e par le Client pour passer sa commande de diff&eacute;rents produits et / ou services (ci-apr&egrave;s d&eacute;nomm&eacute;s les &laquo;produits&raquo; et / ou &laquo;services&raquo;).</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">L&apos;application de commande en ligne est d&eacute;tenue et exploit&eacute;e par le donneur de licence du contrat de licence concernant l&apos;utilisation de l&apos;application pour commander en ligne.<br>Sans affecter la g&eacute;n&eacute;ralit&eacute; des pr&eacute;sentes conditions g&eacute;n&eacute;rales et dans un souci de clart&eacute;, vous devez &eacute;galement respecter le contrat de licence concernant l&apos;utilisation de l&apos;application afin de commander en ligne.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Le Restaurant fera toutes les diligences n&eacute;cessaires pour garantir l&apos;exactitude et la fiabilit&eacute; des informations relatives &agrave; la commande en ligne. Cependant, cela ne peut pas &ecirc;tre infaillible et des erreurs peuvent parfois se produire. Vous devez prendre les mesures appropri&eacute;es pour v&eacute;rifier toutes les informations relatives &agrave; la commande en ligne avant de l&apos;utiliser. Dans la mesure maximale autoris&eacute;e par la loi applicable, le Restaurant d&eacute;cline toute garantie ou repr&eacute;sentation de quelque nature que ce soit, expresse ou implicite, quant &agrave; toute question relative &agrave; la commande en ligne, y compris, sans limitation, la disponibilit&eacute; de l&apos;application de commande en ligne.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Le Restaurant peut r&eacute;viser p&eacute;riodiquement les informations relatives &agrave; la demande et / ou au processus de commande en ligne et se r&eacute;serve le droit d&apos;apporter de telles modifications sans aucune obligation d&apos;aviser les clients pass&eacute;s, actuels ou potentiels. En aucun cas, le Restaurant ne sera responsable des dommages indirects, sp&eacute;ciaux, accessoires ou cons&eacute;cutifs r&eacute;sultant de toute utilisation des informations contenues dans ce document et / ou en relation avec le processus de commande en ligne.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Par la commande en ligne, vous reconnaissez et acceptez que l&apos;utilisation de l&apos;application et / ou des processus de commande en ligne se fait &agrave; vos risques et p&eacute;rils et dans la mesure permise par la loi en vigueur. En aucun cas, Nous ne serons responsables de toute dommages, pertes, co&ucirc;ts ou d&eacute;penses indirects, accessoires, sp&eacute;ciaux, cons&eacute;cutifs ou punitifs, ni pour toute perte de profit r&eacute;sultant de l&apos;utilisation ou de l&apos;impossibilit&eacute; d&apos;utiliser cette commande en ligne et / ou toute application et / ou mat&eacute;riel sur tout site li&eacute; &agrave; cette application de commande en ligne (y compris, mais sans s&apos;y limiter, les virus ou toutes autres erreurs ou d&eacute;fauts ou d&eacute;faillances dans les transmissions informatiques ou les communications r&eacute;seau) m&ecirc;me si Nous avons &eacute;t&eacute; inform&eacute;s de la possibilit&eacute; de tels dommages. De plus, nous ne pouvons &ecirc;tre tenus responsables de toute modification apport&eacute;e au contenu de la demande de commande en ligne et / ou du processus par des tiers non autoris&eacute;s. Toutes les garanties ou repr&eacute;sentations expresses ou implicites sont exclues dans toute la mesure permise par la loi applicable.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">L&apos;application et / ou le processus de commande en ligne peut inclure du contenu, des informations ou des liens vers des tiers ou des sites tiers. Le Restaurant n&apos;est pas responsable du contenu de ces sites, ni du contenu d&apos;une publicit&eacute; ou d&apos;un parrainage tiers, ni de leur conformit&eacute; avec les r&eacute;glementations. Les liens sont accessibles aux risques et p&eacute;rils de l&apos;utilisateur et le Restaurant ne donne aucune garantie quant au contenu, &agrave; l&apos;exhaustivit&eacute; ou &agrave; l&apos;exactitude de ces liens ou des sites hyperli&eacute;s &agrave; cette application de commande en ligne. Vous acceptez d&apos;exon&eacute;rer le Restaurant de toute responsabilit&eacute; r&eacute;sultant de votre utilisation des informations d&apos;un tiers ou de votre utilisation d&apos;un site Web tiers.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Sauf mention contraire expresse, toutes les informations relatives &agrave; l&apos;application de commande en ligne (y compris, sans s&apos;y limiter, les images, les boutons et le texte) sont la propri&eacute;t&eacute; et / ou disponibles avec l&apos;autorisation du donneur de licence du contrat de licence concernant l&apos;utilisation de l&apos;application afin de commander en ligne, qui d&eacute;tient des droits d&apos;utilisation sur eux et ne peuvent pas &ecirc;tre copi&eacute;es, distribu&eacute;es, reproduites ou transmises sous quelque forme ou par quelque moyen que ce soit, &eacute;lectronique, m&eacute;canique, photocopie, enregistrement ou autre, sans son autorisation &eacute;crite pr&eacute;alable.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Le contenu se r&eacute;f&eacute;rant &agrave; des produits sp&eacute;cifiques (par exemple les produits alimentaires), la disposition des textes de l&apos;application et / ou du processus de commande en ligne, les marques de commerce et tout autre contenu, est exclusif et prot&eacute;g&eacute; conform&eacute;ment aux r&eacute;glementations l&eacute;gales en vigueur et ne peut en aucun cas &ecirc;tre utilis&eacute; sans l&apos;autorisation &eacute;crite expresse du Restaurant<br>Le Client n&apos;obtient aucune licence ni aucun droit concernant les informations relatives &agrave; la commande et / ou &agrave; l&apos;application en ligne.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Si vous d&eacute;cidez de commander en ligne &agrave; l&apos;aide de l&apos;application de commande en ligne, il peut vous &ecirc;tre demand&eacute; de fournir des coordonn&eacute;es compl&egrave;tes et / ou de cr&eacute;er un compte et vous devrez peut-&ecirc;tre accepter les cookies. Vous devez garder vos donn&eacute;es confidentielles et ne les divulguer &agrave; personne. Le Restaurant se r&eacute;serve le droit de suspendre l&apos;utilisation de l&apos;application et / ou du processus de commande en ligne si vous ne respectez pas les Conditions G&eacute;n&eacute;rales.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Vous reconnaissez et acceptez que toutes les commandes sont trait&eacute;es comme une intention expresse d&apos;acheter les produits et / ou services d&eacute;sign&eacute;s aux prix en ligne convenus et nous consid&eacute;rons cela comme une offre ferme de votre part pour l&apos;achat de ces produits et services. Toutes les variations doivent &ecirc;tre &eacute;crites, sinon elles n&apos;obligeront aucune des parties.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">L&apos;acceptation de toute commande pour l&apos;un des produits et / ou services sera &agrave; l&apos;enti&egrave;re discr&eacute;tion du Restaurant. Notre acceptation d&apos;une commande est faite lorsque vous recevez un message &agrave; l&apos;&eacute;cran et / ou une notification par e-mail et / ou un SMS, confirmant votre commande.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Le Restaurant se r&eacute;serve le droit de refuser tout service, de mettre fin &agrave; votre acc&egrave;s &agrave; l&apos;application et / ou au processus de commande en ligne, de supprimer ou de modifier tout contenu ou d&apos;accepter votre / vos commande (s) &agrave; sa seule discr&eacute;tion et sans pr&eacute;avis.<br>L&apos;application de commande en ligne du Restaurant ne doit &ecirc;tre utilis&eacute;e que par des personnes &acirc;g&eacute;es de plus de dix-huit (18) ans, ou l&apos;&acirc;ge l&eacute;gal minimum autoris&eacute; par la loi ou autrement sous la surveillance d&apos;un adulte ou d&apos;un tuteur.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Tous les produits et / ou services fournis via l&apos;application de commande en ligne le sont &laquo;tels quels&raquo; et &laquo;si disponibles&raquo; et le Restaurant exclut express&eacute;ment toute garantie, condition, repr&eacute;sentation ou autre condition relative &agrave; la commande en ligne ou le contenu ou les produits qui y sont affich&eacute;s, qu&apos;ils soient explicites ou implicites, sauf indication contraire expresse.&nbsp;</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Les photos des produits sont pour la pr&eacute;sentation seulement. Les produits command&eacute;s peuvent pr&eacute;senter des diff&eacute;rences (par exemple couleur, forme, etc.) par rapport aux photos pr&eacute;sentes sur le site. Le Restaurant d&eacute;cline toute responsabilit&eacute; si la description des produits n&apos;est pas compl&egrave;te.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Les commandes de livraison sont &eacute;galement soumises &agrave;: i) Votre adresse se trouvant dans la zone de livraison d&eacute;finie par le Restaurant; ii) Disponibilit&eacute; du restaurant en ligne pour accepter les commandes en ligne; iii) Votre commande peut &ecirc;tre soumise &agrave; un montant minimum par commande;<br>Vous pouvez payer par l&apos;une des m&eacute;thodes mentionn&eacute;es dans notre &eacute;cran de paiement. Veuillez vous assurer que si votre commande est pass&eacute;e &agrave; l&apos;aide d&apos;une carte de cr&eacute;dit ou de d&eacute;bit, la carte est valide &agrave; la date de votre commande. Le Restaurant ne peut pas rembourser les commandes pay&eacute;es en ligne. Contactez-nous directement pour r&eacute;gler tout litige de paiement ou demande de remboursement.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Il est possible que vous soyez automatiquement dirig&eacute; vers une liste en ligne faisant r&eacute;f&eacute;rence &agrave; l&apos;emplacement de votre service de restaurant &agrave; proximit&eacute;. Veuillez noter que les prix, les restrictions de d&eacute;penses minimales et les restrictions maximales de d&eacute;penses en esp&egrave;ces varient d&apos;un endroit &agrave; l&apos;autre. De plus, si vous commandez en ligne, le prix factur&eacute; peut &ecirc;tre diff&eacute;rent du prix des Produits s&apos;ils avaient &eacute;t&eacute; command&eacute;s en magasin ou par t&eacute;l&eacute;phone.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">La commande en ligne une fois pass&eacute;e ne peut &ecirc;tre ni modifi&eacute;e ni annul&eacute;e via le site Internet ou hors ligne en appelant le restaurant. Quoi qu&apos;il en soit, si vous souhaitez annuler ou vous plaindre de votre commande, veuillez appeler votre restaurant local, dont les d&eacute;tails seront inclus dans l&apos;e-mail de confirmation qui vous sera envoy&eacute; lors de votre commande et nous pouvons voir comment nous pouvons vous aider.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Nous ferons tous les efforts n&eacute;cessaires pour vous fournir vos produits command&eacute;s le plus pr&egrave;s possible de l&apos;heure de livraison / collecte demand&eacute;e, mais nous ne pouvons garantir le d&eacute;lai de livraison dans tous les cas. Le d&eacute;lai de livraison peut &ecirc;tre affect&eacute; en raison du mauvais temps ou des conditions de circulation. Il s&apos;agit d&apos;assurer la s&eacute;curit&eacute; de nos coureurs. Le service de livraison peut &ecirc;tre temporairement indisponible dans certaines zones en raison du mauvais temps ou de circonstances impr&eacute;vues.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Le Client s&apos;engage &agrave; accepter la livraison des Produits &agrave; l&apos;heure et au lieu de livraison convenus. Si vous avez choisi que les Produits soient livr&eacute;s, le Restaurant livrera la commande &agrave; l&apos;entr&eacute;e principale de l&apos;adresse de livraison mais toutes les livraisons effectu&eacute;es &agrave; l&apos;adresse de livraison ne seront effectu&eacute;es que si le chauffeur et vous y consentez. Si vous n&apos;&ecirc;tes pas pr&eacute;sent pour prendre la marchandise &agrave; l&apos;adresse indiqu&eacute;e dans votre commande, nous ne vous rembourserons pas le prix de votre commande et vous facturerons le montant total de votre commande.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Le risque des produits sera transf&eacute;r&eacute; au client &agrave; la livraison. Tout service du logiciel / logiciel est utilis&eacute; et / ou t&eacute;l&eacute;charg&eacute; &agrave; vos propres risques. Si vous avez un doute quant &agrave; la pertinence du service / logiciel &agrave; utiliser et / ou &agrave; t&eacute;l&eacute;charger pour votre ordinateur, il est recommand&eacute; d&apos;obtenir des conseils sp&eacute;cialis&eacute;s avant de l&apos;utiliser et / ou de le t&eacute;l&eacute;charger.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Vous &ecirc;tes responsable du maintien de la confidentialit&eacute; de vos informations personnelles, de votre mot de passe et de vos informations de paiement. Vous acceptez l&apos;enti&egrave;re responsabilit&eacute; de toutes vos activit&eacute;s li&eacute;es &agrave; la commande en ligne (application).</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Vous ne pouvez pas c&eacute;der, sous-licencier ou autrement transf&eacute;rer aucun de vos droits en vertu de ces termes et conditions. Dans le cas o&ugrave; une disposition de cet accord est et / ou devient nulle, ill&eacute;gale, invalide ou inapplicable, elle n&apos;affectera pas la validit&eacute; ou l&apos;applicabilit&eacute; des autres clauses contractuelles, qui resteront en vigueur et produiront des effets juridiques comme si le une clause nulle, ill&eacute;gale, invalide ou inapplicable ne faisait pas partie de cet accord.&nbsp;</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Ces conditions g&eacute;n&eacute;rales n&apos;affectent pas vos droits statutaires.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Les marques de commerce du restaurant, ainsi que les marques de commerce des autres et la propri&eacute;t&eacute; exclusive connexe sont prot&eacute;g&eacute;es contre la copie et la simulation en vertu des lois nationales et internationales et ne doivent pas &ecirc;tre reproduites ou copi&eacute;es sans l&apos;autorisation &eacute;crite expresse du restaurant.&nbsp;</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Dans toute la mesure permise par la loi, le Restaurant exclut toute responsabilit&eacute; d&eacute;coulant de sa fourniture des Produits et en particulier ne sera pas responsable de toute perte ou dommage, r&eacute;sultant directement ou indirectement de ou en relation avec un retard au-del&agrave; de l&apos;heure de livraison estim&eacute;e, toute circonstance dont le Restaurant n&apos;avait aucun contr&ocirc;le sur les cons&eacute;quences et que le Restaurant ne pouvait &eacute;viter par l&apos;exercice d&apos;une diligence raisonnable, ou toute perte indirecte ou impr&eacute;visible subie ou subie par le Client ou d&apos;autres personnes. En tout &eacute;tat de cause, la responsabilit&eacute; du Restaurant envers le Client ne d&eacute;passera pas le prix total factur&eacute; pour les produits / et / ou services concern&eacute;s.</p>
+<p style="text-align: left;color: rgb(66, 66, 66);font-size: 14px;">Les pr&eacute;sentes conditions g&eacute;n&eacute;rales seront r&eacute;gies et interpr&eacute;t&eacute;es conform&eacute;ment aux lois du pays dans lequel le Restaurant a son si&egrave;ge social et tout litige d&eacute;coulant de ou en relation avec celles-ci sera r&eacute;gl&eacute; par les tribunaux comp&eacute;tents du si&egrave;ge du Restaurant, excluant la possibilit&eacute; de renvoi &agrave; des conflits de lois.</p>
+<br><br><br><br>
+</div>
+    </div>
+  </div>
+
+  <!-- Start Map section -->
+  <section id="mu-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2852.466846870971!2d2.5774658762144833!3d44.36200257107732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12b27d180c96027d%3A0xd3cd3fd05836ccf1!2sSYLHETI%20NAAN%20KEBAB!5e0!3m2!1sfr!2sfr!4v1694037254846!5m2!1sfr!2sfr" width="100%" height="100%" frameborder="0"allowfullscreen></iframe>
+  </section>
+  <!-- End Map section -->
+
+  <!-- Start Footer -->
+  <footer id="mu-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        <div class="mu-footer-area">
+           <div class="mu-footer-social">
+            <a href="https://www.facebook.com/profile.php?id=61550839443096"><span class="fa fa-facebook"></span></a>
+            <a href="https://www.instagram.com/sylhetinaankebab/"><span class="fa fa-instagram"></span></a>
+          </div>
+          <div class="mu-footer-copyright">
+            <p>Copyright &copy;<script>document.write(new Date().getFullYear());</script>. Tous droits réservés à Sylhet Naan Kebab. &mdash; Conçu avec passion par <a href="https://lcdigitale.fr" target="_blank" rel="nofollow noopener" class="link-highlight">lcdigitale.fr</a> &bullet; <a href="MarkUps.io" target="_blank" rel="nofollow noopener" class="link-highlight">Licence</a></p>
+
+            <!-- <p>Designed by <a rel="nofollow" href="http://www.markups.io/">MarkUps.io</a></p> -->
+          </div>         
+        </div>
+      </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+  
+  <!-- jQuery library -->
+  <script src="assets/js/jquery.min.js"></script>  
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="assets/js/bootstrap.js"></script>   
+  <!-- Slick slider -->
+  <script type="text/javascript" src="assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="assets/js/jquery.counterup.js"></script>
+  <!-- Date Picker -->
+  <script type="text/javascript" src="assets/js/bootstrap-datepicker.js"></script> 
+  <!-- Mixit slider -->
+  <script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="assets/js/jquery.fancybox.pack.js"></script>
+
+  <!-- Custom js -->
+  <script src="assets/js/custom.js"></script> 
+
+  <script src="https://www.fbgcdn.com/embedder/js/ewm2.js" defer async ></script>
+
+  </body>
+</html>
